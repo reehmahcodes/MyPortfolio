@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;;
+}
+
+.container {
+    margin: 0px 32px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+#home {
+    background: linear-gradient(rgba(53, 60, 75, 0.382), rgb(27 39 39 / 65%)), url(../assets/dev1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home nav {
+    display: flex;
+    padding: 5px 18px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 3;
+}
+
+.ham-disp {
+    display: none;
+}
+
+.resume1 {
+    background:none;
+    border-radius: 20px;
+    color: white;
+    border: 4px solid #038daa;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+#home nav ul {
+    display: flex;
+    gap: 5rem;
+    padding-right: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-item {
+    text-decoration: none;
+}
+
+#home nav ul a {
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+#home nav ul a:hover {
+    color: #038daa;
+    font-size: 20px;
+}
+
+#home nav ul li {
+    list-style: none;
+}
+
+#home .main-home {
+    height: 90vh;
+}
+
+.frontend {
+    font-size: 60px;
+    padding-bottom: 15px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500px;
+    padding-bottom: 15px;
+    padding-top: 50px;
+}
+
+.icons {
+    font-size: 25px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.icons a {
+    color: white;
+    transition: 2s ease-in-out;
+}
+
+.icons a :hover {
+    color: #038daa;
+}
+
+.bi-facebook {
+    padding-right: 30px;
+}
+
+.bi-twitter {
+    padding-right: 30px;
+}
+
+.bi-instagram {
+    padding-right: 30px;
+}
+
+.bi-linkedin {
+    padding-right: 30px;
+}
+
+button {
+    align-items: center;
+    margin-right: 15px;
+}
+
+.con-tent {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.contact {
+    padding: 10px 50px;
+    background: none;
+    color: white;
+    font-size: 17px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.contact:hover {
+    background-color:#038daa ;
+    color: white;
+}
+
+#About {
+    background-color: rgba(128, 128, 128, 0.115);
+    height: 100vh;
+}
+
+#about-bout {
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.about-me {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.Me {
+    text-align: center;
+    font-size: 20px;
+}
+
+.image img {
+    height: 380px; 
+    width:380px;
+    border-radius: 50%;
+    border: 8px solid white;
+    margin-left: 15px;
+    float: end;
+}
+
+.about-myself {
+    width: 46vw;
+    font-size: 22px;
+    padding-left: 120px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100px;
+    justify-content: center;
+    align-self: center;
+}
+
+.resume {
+    margin-left: 120px;
+    padding: 10px 50px;
+    background:none;
+    font-size: 18px;
+    border-radius: 20px;
+    color: black;
+    border: 3px solid #038daa;
+    margin-top: 25px;
+    transition: .2s ease-in-out;
+    font-weight: 500;
+}
+
+.resume:hover {
+    background-color:#038daa;
+    cursor: pointer;
+    color: white;
+}
+
+#Portfolio {
+    background-color: #038daa;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.portfolio1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.portfolio {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about_me {
+    font-size: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    /* margin-right: 20px; */
+    padding: 7px;
+    border: 3px;
+}
+
+.pits {
+   border: 2px solid white; 
+   margin: 0px 20px;
+   cursor: pointer;
+}
+
+.portfolio-item1 {
+    background-color: none;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.portfolio-img {
+    width: 430px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-item1:hover .portfolio-img img {
+    transform: scale(1.2);
+}
+
+.portfolio-item2:hover .portfolio-img img {
+    transform: scale(1.2);
+}
+
+.portfolio-item3:hover .portfolio-img img {
+    transform: scale(1.2);
+}
+.portfolio-item1 {
+    overflow: hidden;
+}
+
+.portfolio-item2 {
+    background-color: none;
+}
+
+.item-detail {
+    padding: 5px 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.item-detail div {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-detail1 {
+    padding: 5px 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.item-detail1 div {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-detail2 {
+    padding: 5px 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.item-detail2 div {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    padding-top: 50px;
+}
+
+.skill-item {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.skill {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.tech-skill {
+    font-size: 30px;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+}
+
+.soft-skill {
+    font-size: 30px;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    margin-top: 50px;
+}
+
+.item4 {
+    padding-bottom: 10px;
+}
+
+.tech-skill2 {
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.tech-skill2 div {
+    border-bottom: 2px solid black;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+
+.tech-skill2.hidden {
+    visibility: hidden;
+}
+
+.techskill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconify {
+    font-size: 35px;
+}
+
+.skill_item {
+    max-width: 70%;
+    margin-left: 40px;
+    margin-bottom: 70px;
+    display: fl;
+}
+
+.tech-soft {
+    display: flex;
+    flex-direction: row;
+}
+
+.all-techsk {
+    width: 50%;
+    margin: 30px;    
+}
+
+.asset {
+    display: flex;
+}
+
+.other-tools {
+    font-size: 30px;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    padding: 17px;
+    justify-content: space-between;
+}
+
+.other_tools {
+    width: 70%;
+    margin: 7% 450px; 
+}
+
+.carousel-inner {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.con-tact {
+    font-size: 50px;
+    padding-top: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Contact {
+    background-color: #038daa;
+    color: white;
+}
+
+.contact-me {
+    display: flex;
+    gap: 27rem;
+}
+
+.telephone {
+    display: flex;
+    gap: 20px;
+    padding: 20px 100px;
+    font-size: 20px;
+}
+
+.contact-info {
+    padding-left: 100px;
+    font-size: 30px;
+    padding-top: 80px;
+}
+
+.gmail {
+    display: flex;
+    gap: 20px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.our-address {
+    display: flex;
+    gap: 20px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.contact-info1 {
+    padding-left: 100px;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.icon {
+    padding-top: 80px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.icon a {
+    color: white;
+    transition: 2s ease-in-out;
+}
+
+.item1 {
+    padding-bottom: 50px;
+}
+
+.copyright {
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bi-c-circle {
+    font-size: 15px;
+}
+
+.bi-chevron-down {
+    cursor: pointer;
+}
+
+.item2 {
+    padding-bottom: 70px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: #2a8aa0;
+    font-size: 20px;
+}
+
+.input .msg{
+    display: list-item;
+    list-style: none;
+}
+
+.send {
+    padding: 20px 50px;
+    background-color: #175b6a;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    margin-left: 70px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+#testimonial {
+    height: 60vh;
+    background:  linear-gradient(rgba(53, 60, 75, 0.382), rgb(27 39 39 / 65%)), url(../assets/dev1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 20px;
+}
+
+
+.carousel {
+    position: relative;
+    width: 300%;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    height: inherit;
+    
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: inherit;
+  }
+  
+  .carousel-item {
+    padding-top: 80px;
+    flex: 0 0 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: black;
+  }  
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.testimonial-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-text {
+    padding-top: 20px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.testimonial-text h6{
+    padding: 0px 0px 10px 0px;
+    font-size: 25px;
+}
+
+/* Starting responsive for mobile view */
+@media (min-width: 200px) and (max-width: 600px) {
+    #home nav {
+        align-items: flex-start;
+        padding: 0px 10px;
+    }
+
+    #home nav img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #home nav ul{
+        padding-top: 20px;
+        flex-direction: column;
+        padding-right: 10px;
+        gap: 1rem;
+    }
+
+    #home nav ul p i {
+        float: right;
+    }
+
+    #home nav ul li {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .main-home {
+        height: 100vh;
+    }
+
+    #home nav ul.collapse li {
+        display: none;
+    }
+
+    .ham-disp {
+        display: block;
+        font-size: 27px;
+        width: 100%;
+    }
+
+    .icons {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .name {
+        padding-top: 15px;
+    }
+
+    .frontend {
+        font-size:50px;
+        padding-bottom: 20px;
+        /* padding-top: 20px; */
+    }
+    
+    .con-tent {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .contact {
+        margin-bottom: 40px;
+    }
+
+    #About {
+        height: 750px;
+    }
+
+    #about-bout {
+       flex-direction: column;
+       justify-content: center;
+       padding: 0px;  
+    }
+
+    .image img {
+        height: 250px;
+        width: 250px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .about-me {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .Me {
+        font-size: 15px;
+    }
+
+    .about-myself {
+        width: inherit;
+        font-size: 17px;
+        padding: 15px 35px;
+        padding-left: 50px;
+
+    }
+
+    .resume {
+        margin-left: 80px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+
+    .portfolio {
+        font-size: 30px;
+    }
+
+    .portfolio1 {
+        padding-top:20px ;
+    }
+
+    .portfolio-item {
+        /* margin-right: 10px; */
+        padding: 0;
+        display: grid;
+    }
+
+    .pits {
+        margin: 0px 30px ;
+        margin-bottom: 17px;
+    }
+
+    .portfolio-img {
+        width: 340px;
+        height: 180px;
+    }   
+
+    .portfolio-item img {
+        transition: all .3s ease-in-out;
+    }
+
+    .item-detail {
+        padding: 10px 10px;
+    }
+
+    .item-detail2 {
+        padding: 5px 10px;
+        padding-top: 10px;
+    }
+
+    .container {
+        margin: 0px 10px;
+        padding: 20px 0px 10px;
+    }
+
+    .skill_item {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .skill-item {
+        font-size: 50px;
+        padding-top: 20px;
+    }
+    
+    .all-techsk {
+        width: 120%;
+        display: column;
+        margin:0px 10px;
+    }
+
+    .tech-skill {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .techskill {
+        font-size: 20px;    
+    }
+
+    .skill {
+        padding-bottom: 20px;
+    }
+
+    .soft-skill {
+        font-size: 25px;
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    .other_tools {
+        /* width: 90%; */
+        margin: 10px 20px;
+        margin-bottom: 50px;
+    }
+
+    .other-tools {
+        font-size: 25px;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .carousel-item {
+        padding-top: 30px;
+    }
+
+    .indicator {
+        width:10px ;
+        margin: 0 3px;
+    }
+    
+    .testimonial-text {
+        padding-top: 10px;
+    }
+
+    q {
+        font-size: 12px;
+    }
+
+    h6 {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .carousel-indicators {
+        bottom: 2px;
+    }
+
+    .iconify {
+        font-size: 27px;
+    }
+    
+    .con-tact {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-info {
+        padding-top: 30px;
+        font-size: 25px;
+        padding-left: 150px;
+    }
+
+    .telephone {
+        padding: 20px 150px;
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    .gmail {
+        font-size: 16px;
+        gap: 15px;
+        padding-left: 70px;
+    }
+
+    .our-address {
+        gap:15px ;
+        padding-left: 120px;
+        font-size:20px ;
+    }
+
+    .contact-info1 {
+        padding-left: 150px;
+    }
+
+    .icon {
+        padding-top: 60px;
+        font-size: 25px;
+        margin-left: 80px;
+    }
+
+    .input {
+        width: 85%;
+        height: 50px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        /* text-align: center; */
+        margin-left: 30px;
+    }
+
+    .input-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+    }
+
+    .send {
+        padding: 15px 50px;
+        font-size: 17px;
+        margin-top: 90px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+    }
+
+    }
+    
+
+
+    
