@@ -4,7 +4,7 @@ window.addEventListener('scroll', function() {
         header.style.backgroundColor = '#175b6a';
         header.style.position = 'fixed';
         header.style.top = '0';
-        header.style.width = '100%';
+        header.style.width = '-webkit-fill-available';
     }
     else {
         header.style.backgroundColor = 'transparent';
@@ -99,4 +99,23 @@ hambuger.addEventListener('click', function() {
 
   iconify.classList.add(`bi-${hamIcon}`);
 })
+
+let upDown = 'down';
+function changeIcon(divName) {
+  const iconify = divName.querySelector('.ti');
+  upDown = (upDown === 'down') ? 'up' : 'down';
+
+  iconify.classList.remove('bi-chevron-down');
+  iconify.classList.remove('bi-chevron-up');
+
+  iconify.classList.add(`bi-chevron-${upDown}`);
+}
+
+function skillClick(skillNum) {
+  const divName = `billy${skillNum}`;
+  const clickDiv = document.querySelector(`.${divName}`);
+  const mild = clickDiv.querySelector('.skill-list');
+  mild.classList.toggle('collapse');
+  changeIcon(clickDiv);
+}
 
