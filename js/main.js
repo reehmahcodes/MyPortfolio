@@ -1,3 +1,5 @@
+// import emailjs from '@emailjs/browser';
+
 window.addEventListener('scroll', function() {
     const header = document.querySelector('nav');
     if (window.scrollY > 0) {
@@ -118,4 +120,90 @@ function skillClick(skillNum) {
   mild.classList.toggle('collapse');
   changeIcon(clickDiv);
 }
+
+window.addEventListener('scroll', function() {
+  let scrollY = window.scrollY;
+  let parallaxBg = document.querySelector('.parallax__background');
+  parallaxBg.style.transform = 'translate3d(0,' + scrollY * 0.5 + 'px, 0)';
+});
+
+// Email JS Entities
+const serviceID = 'service_hertta5';
+const templateID = 'template_qj1qjg6';
+const publicKey = 'gWbzO-1g3x-Ns83zh';
+
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email')
+const phoneInput = document.querySelector('#phone')
+const messageInput = document.querySelector('#messagein')
+
+function handlesubmit () {
+  let name, email, phone, message;
+  name = nameInput.value;
+  email = emailInput.value;
+  phone = phoneInput.value;
+  message = messageInput.value;
+
+  const params = {
+    name: name,
+    email: email,
+    phone: phone,
+    message: message
+  };
+
+  // sending the mail
+  emailjs.send(serviceID, templateID, params, publicKey)
+    .then((result) => {
+      console.log(result.text);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+
+
+
+
+
+
+
+// emailjs.send(serviceID, templateID, params, publicKey)
+//   .then((result) => {
+//     console.log(result.text);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
+// const text = "This is the text that will be animated.";
+// let index = 0;
+
+// const animateText = () => {
+//   if (index < text.length) {
+//     document.getElementById("animated-text").textContent += text.charAt(index);
+//     index++;
+//     setTimeout(animateText, 100); // Adjust delay for desired typing speed
+//   }
+// };
+
+// animateText();
+// #animated-text {
+//   overflow: hidden;
+//   display: inline-block;
+//   animation: typing 3s steps(10) infinite;
+// }
+
+// @keyframes typing {
+//   0% {
+//     width: 0;
+//   }
+//   100% {
+//     width: 100%;
+//   }
+// }
+// <span id="animated-text">This is the text that will be animated.</span>
+
+
+
 

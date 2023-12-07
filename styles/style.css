@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +20,10 @@
     color: white;
     text-align: center;
     padding-top: 50px;
+
+    animation:slideInLeft 1s ease-in 1s ;
+
+    /* transform: translateX(-150px); */
 }
 
 p {
@@ -36,7 +49,8 @@ p {
 }
 
 .ham-disp {
-    display: none;
+    scale: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .resume1 {
@@ -101,7 +115,7 @@ p {
 
 .icons a {
     color: white;
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
 }
 
 .icons a :hover {
@@ -149,6 +163,10 @@ button {
     color: white;
 }
 
+h5 {
+    padding-bottom: 20px;
+}
+
 #About {
     background-color: rgba(128, 128, 128, 0.115);
     height: 100vh;
@@ -184,11 +202,11 @@ button {
 }
 
 .about-myself {
-    width: 46vw;
-    font-size: 22px;
+    width: 47vw;
+    font-size: 20px;
     padding-left: 120px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-weight: 100px; */
     justify-content: center;
     align-self: center;
 }
@@ -372,7 +390,7 @@ button {
 
 .contact-me {
     display: flex;
-    gap: 27rem;
+    gap: 20rem;
 }
 
 .telephone {
@@ -640,8 +658,8 @@ input {
     }
 
     .ham-disp {
-        display: block;
-        font-size: 27px;
+        scale: 1;
+        font-size: 22px;
         width: 100%;
     }
 
@@ -680,8 +698,8 @@ input {
     }
 
     .image img {
-        height: 200px;
-        width: 200px;
+        height: 220px;
+        width: 220px;
         margin: 0px;
         margin-top: 20px;
     }
@@ -697,14 +715,14 @@ input {
 
     .about-myself {
         width: inherit;
-        font-size: 16px;
+        font-size: 17px;
         padding: 15px 35px;
         padding-left: 50px;
-
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     .resume {
-        margin-left: 80px;
+        margin-left: 120px;
         margin-top: 20px;
         margin-bottom: 70px;
     }
@@ -849,35 +867,35 @@ input {
     .contact-info {
         padding-top: 30px;
         font-size: 25px;
-        padding-left: 120px;
+        padding-left: 180px;
     }
 
     .telephone {
-        padding: 20px 120px;
+        padding: 20px 180px;
         font-size: 18px;
         gap: 15px;
     }
 
     .gmail {
         font-size: 16px;
-        gap: 15px;
-        padding-left: 70px;
+        gap: 17px;
+        padding-left: 90px;
     }
 
     .our-address {
         gap:15px ;
-        padding-left: 100px;
+        padding-left: 140px;
         font-size:20px ;
     }
 
     .contact-info1 {
-        padding-left: 120px;
+        padding-left: 180px;
     }
 
     .icon {
         padding-top: 50px;
         font-size: 25px;
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     .input {
