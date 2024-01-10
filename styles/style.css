@@ -655,7 +655,7 @@ input {
     }
 
     .main-home {
-        /* height: 100vh; */
+        height: 100vh;
         /* margin-bottom: 20px; */
     }
 
@@ -766,11 +766,13 @@ input {
 
     .item-detail {
         padding: 10px 10px;
+        font-size: 15px;
     }
 
     .item-detail2 {
         padding: 5px 10px;
         padding-top: 10px;
+        font-size: 15px;
     }
 
     .container {
@@ -867,37 +869,38 @@ input {
         gap: 10px;
     }
 
-    .contact-info {
-        padding-top: 30px;
-        font-size: 25px;
-        padding-left: 180px;
-    }
-
     .telephone {
-        padding: 20px 180px;
+        padding: 20px 140px;
         font-size: 18px;
         gap: 15px;
     }
 
     .gmail {
-        font-size: 16px;
+        font-size: 17px;
         gap: 17px;
         padding-left: 90px;
     }
 
     .our-address {
         gap:15px ;
-        padding-left: 140px;
-        font-size:20px ;
+        padding-left: 120px;
+        font-size:18px ;
     }
 
     .contact-info1 {
         padding-left: 180px;
+        font-size: 20px;
+    }
+
+    .contact-info {
+        padding-left: 160px;
+        font-size: 20px;
+        padding-top: 30px;
     }
 
     .icon {
         padding-top: 50px;
-        font-size: 25px;
+        font-size: 22px;
         margin-left: 100px;
     }
 
