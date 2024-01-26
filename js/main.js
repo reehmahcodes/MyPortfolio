@@ -141,7 +141,7 @@ function handlesubmit () {
   let name, email, phone, message;
   name = nameInput.value;
   email = emailInput.value;
-  phone = phoneInput.value;
+  phone = phoneInput.value; 
   message = messageInput.value;
 
   const params = {
